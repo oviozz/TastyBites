@@ -3,7 +3,6 @@
 ![image](https://github.com/oviozz/TastyBites/assets/42685801/bf6ed041-4861-4a4c-a6b4-eafc6d6aff7c)
 ![image](https://github.com/oviozz/TastyBites/assets/42685801/503294bb-cd76-4195-bfb9-4ca1be796373)
 ![image](https://github.com/oviozz/TastyBites/assets/42685801/b0cb6635-e076-4ce7-9a31-73f1dd91689d)
-![image](https://github.com/oviozz/TastyBites/assets/42685801/bddbfd26-ab72-4059-9d75-47cc090aa7dd)
 
 
 
