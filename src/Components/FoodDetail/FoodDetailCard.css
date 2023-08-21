@@ -1,0 +1,163 @@
+
+/* FoodDetailCard.css */
+
+.fooddetail--container {
+    padding: 10px;
+    width: 65%;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.fooddetail--title {
+    font-size: 3.5rem;
+    text-align: left;
+}
+
+.category--detail {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.7em;
+}
+
+.detail--info {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    height: 390px;
+
+}
+
+.ingre--item {
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.detail--video {
+    width: 100%; /* Set the video width to 100% */
+    border: none;
+    border-radius: 10px;
+}
+
+.ingredient--title {
+    font-size: 2.5rem; /* Increase font size for the title */
+    text-align: left; /* Align title to the left */
+}
+
+.detail--instruction {
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e3f1ff;
+
+}
+
+
+.detail--cover{
+    display: flex;
+    gap: 1em;
+    height: 345px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+
+
+
+.category--dish{
+    background-color: #769def;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+
+}
+
+.category--dish:hover{
+    background-color: #769def;
+    transform: scale(1.02);
+    cursor: pointer;
+
+}
+
+.ingredient--lists{
+    padding: 0.5em 0 0.5px 1.7em;
+    background-color: white;
+    border-radius: 10px;
+    height: 83%;
+    overflow-y: hidden;
+
+}
+
+.detail--ingredient{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e3f1ff;
+
+}
+
+.detail--paragraph{
+    background-color: white;
+    border-radius: 10px;
+    height: 255px;
+    padding: 10px;
+    overflow-y: scroll;
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .fooddetail--container{
+        width: 100%;
+    }
+
+    .fooddetail--title {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .detail--instruction{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .detail--cover{
+        display: block;
+        height: 100%;
+    }
+
+    .detail--paragraph{
+        height: 315px;
+    }
+}
+
+.detail--paragraph {
+    /* Existing styles */
+    overflow-y: scroll;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #f0f0f0 white; /* For Firefox */
+}
+
+/* Custom scrollbar styling for WebKit browsers (Chrome, Safari) */
+.detail--paragraph::-webkit-scrollbar {
+    width: 10px;
+}
+
+.detail--paragraph::-webkit-scrollbar-thumb {
+    background-color: #f0f0f0; /* Lighter color like macOS */
+    border-radius: 10px;
+}
+
+.detail--paragraph::-webkit-scrollbar-track {
+    background-color: white; /* Background behind the scrollbar thumb */
+    border-radius: 10px;
+}
+
+/* Additional styling for Firefox */
+.detail--paragraph {
+    scrollbar-width: thin;
+    scrollbar-color: #f0f0f0 white;
+}

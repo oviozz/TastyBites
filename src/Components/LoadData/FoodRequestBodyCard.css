@@ -1,0 +1,93 @@
+
+
+
+.foodlists--items-container{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.2em;
+}
+
+.foodlist--recipe-name{
+    font-size: 2.3rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+
+}
+
+
+.foodlist--img{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.foodlist--name{
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 10px;
+}
+
+.foodlists--items {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+
+}
+
+.foodList--container{
+    width: 70%;
+}
+
+
+
+.foodlists--items:hover{
+    transform: scale(1.02);
+}
+
+
+.error--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    opacity: 50%;
+}
+.error--icon{
+    font-size: 10em;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .foodList--container{
+        width: 100%;
+    }
+
+    .foodlists--items-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.7em;
+        list-style-type: none;
+    }
+
+
+    .foodlist--img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+
+
+}
+

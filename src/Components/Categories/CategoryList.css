@@ -1,0 +1,39 @@
+
+
+
+.category--img{
+}
+
+.component--pagetitle{
+    font-size: 2.3rem;
+}
+
+.category--container{
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+
+    width: 70%;
+}
+
+.category--item{
+    text-align: center;
+    background-color: #e3f1ff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+.category--item:hover{
+    background-color: #c7e5ff;
+    transform: scale(1.02);
+
+}
+
+.item--title{
+    font-size: 1.7rem;
+}

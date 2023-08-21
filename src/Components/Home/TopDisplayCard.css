@@ -1,0 +1,115 @@
+
+
+.display--card{
+    display: flex;
+    transition: transform 0.3s ease;
+
+    cursor: pointer;
+
+}
+
+.display--card:hover{
+    transform: scale(1.02);
+}
+
+.topdisplay--img{
+    width: 550px;
+    height: 350px;
+    object-fit: cover;
+
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.food--category{
+    font-size: 1.3rem;
+}
+
+.info--card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #e3f1ff;
+    width: 450px;
+    min-width: 250px;
+
+
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+
+.food--name{
+    font-size: 3rem;
+}
+
+.food--ingredients{
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+
+.ingredient--items{
+    margin-left: 1em;
+}
+
+.food--detail{
+    background-color: white;
+    padding: 5px 5px 5px 10px;
+    border-radius: 10px;
+}
+
+.topdispay--regenerate{
+    margin-left: auto;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .info--card{
+        gap: 5px;
+    }
+    .food--category{
+        font-size: 1rem;
+    }
+
+    .food--name{
+        font-size: 2rem;
+    }
+
+    .food--ingredients{
+        font-size: 1rem;
+
+    }
+
+    .display--card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .topdisplay--img{
+        object-fit: initial;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        width: 90%;
+        height: auto;
+    }
+
+    .info--card{
+        width: 90%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+
+    }
+
+
+}
+
