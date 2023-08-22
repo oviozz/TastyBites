@@ -31,7 +31,7 @@ function TopDisplayCard() {
                 <img
                     loading={"lazy"}
                     className={"topdisplay--img"}
-                    src={mealRecipe.strMealThumb}
+                    src={mealRecipe.strMealThumb || "white.png"}
                     alt={mealRecipe.strMeal}
                     decoding={"async"}
                     width={"550px"}
