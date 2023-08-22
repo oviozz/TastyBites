@@ -1,9 +1,12 @@
 
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "./TopDisplayCard.css";
 import { useEffect, useState } from "react";
 import {Link} from "react-router-dom";
+import PictureLoad from "../Layout/PictureLoad";
+
 
 function TopDisplayCard() {
 
@@ -30,6 +33,9 @@ function TopDisplayCard() {
                     className={"topdisplay--img"}
                     src={mealRecipe.strMealThumb}
                     alt={mealRecipe.strMeal}
+                    decoding={"async"}
+                    width={"550px"}
+                    height={"350px"}
                 />
 
                 <div className={"info--card"}>
