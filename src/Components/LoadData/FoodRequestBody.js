@@ -1,11 +1,14 @@
 
 
+
 import {useEffect, useState} from "react";
 import PictureLoad from "../Layout/PictureLoad";
 import FoodRequestBodyCard from "./FoodRequestBodyCard";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCookieBite} from "@fortawesome/free-solid-svg-icons";
+
+
 
 function FoodRequestBody(props){
 
@@ -44,11 +47,11 @@ function FoodRequestBody(props){
         );
     }
 
-    const dataPass = mealReq.map((item) => {
+    const dataPass = mealReq.map((item, index) => {
         return (
-            <li className={"foodlists--items"} key={item.idMeal} id={item.idMeal}>
+            <li className={"foodlists--items"} key={item.idMeal} id={item.idMeal} style={{ animationDelay: `${index * 0.1}s` }}>
                 <Link to={`/detail/${item.idMeal}`}>
-                    <img loading={"lazy"} className={"foodlist--img"} src={item.strMealThumb} alt={props.alt}/>
+                    <img loading={"lazy"} className={"foodlist--img"} src={item.strMealThumb} alt={props.alt} />
                     <h3 className={"foodlist--name"}>{item.strMeal.slice(0, 23)}</h3>
                 </Link>
             </li>
