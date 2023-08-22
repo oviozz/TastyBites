@@ -1,8 +1,6 @@
 
 
-
 import {useEffect, useState} from "react";
-import PictureLoad from "../Layout/PictureLoad";
 import FoodRequestBodyCard from "./FoodRequestBodyCard";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -51,7 +49,13 @@ function FoodRequestBody(props){
         return (
             <li className={"foodlists--items"} key={item.idMeal} id={item.idMeal} style={{ animationDelay: `${index * 0.1}s` }}>
                 <Link to={`/detail/${item.idMeal}`}>
-                    <img loading={"lazy"} className={"foodlist--img"} src={item.strMealThumb} alt={props.alt} />
+                    <img
+                        loading={"lazy"}
+                        className={"foodlist--img"}
+                        src={item.strMealThumb}
+                        alt={props.alt}
+                        decoding={"async"}
+                    />
                     <h3 className={"foodlist--name"}>{item.strMeal.slice(0, 23)}</h3>
                 </Link>
             </li>
