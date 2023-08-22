@@ -59,7 +59,7 @@ function CategoryList(props){
     const shuffledData = categories.sort(() => Math.random() - 0.5);
 
     const categoryData = shuffledData.map((item, index) => {
-        return <CategoryListsCard key={index} index={index} image={item.image} title={item.name}/>
+        return <CategoryListsCard key={index} index={index} image={item.image} title={item.name} styleIndex={{ animationDelay: `${index * 0.1}s` }}/>
     })
 
     const displaySelect = () => {
