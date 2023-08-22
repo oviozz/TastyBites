@@ -1,6 +1,7 @@
 
 
 
+
 .category--img{
 }
 
@@ -36,4 +37,21 @@
 
 .item--title{
     font-size: 1.7rem;
+}
+
+
+@keyframes itemAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Start slightly below normal position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move back to the original position */
+    }
+}
+
+.category--item {
+    opacity: 0;
+    animation: itemAppear 0.2s ease forwards; /* Apply animation to each item */
 }
